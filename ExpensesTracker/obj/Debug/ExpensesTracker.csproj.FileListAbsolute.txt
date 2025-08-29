@@ -1,0 +1,15 @@
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\bin\Debug\ExpensesTracker.exe
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\bin\Debug\ExpensesTracker.pdb
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.csproj.AssemblyReference.cache
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Form1.resources
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Form2.resources
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Dashboard.resources
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Income.resources
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Properties.Resources.resources
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.csproj.GenerateResource.cache
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.csproj.CoreCompileInputs.cache
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.pdb
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\bin\Debug\ExpensesTracker.exe.config
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.exe
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Expense.resources
+D:\Programming\C#\ExpensesTracker\ExpensesTracker\obj\Debug\ExpensesTracker.Profile.resources
