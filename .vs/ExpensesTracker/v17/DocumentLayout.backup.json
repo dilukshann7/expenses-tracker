@@ -1,29 +1,218 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Programming\\C#\\ExpensesTracker\\",
+  "WorkspaceRootPath": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|d:\\programming\\c#\\expensestracker\\expensestracker\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C#\\ExpensesTracker\\expensestracker\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C#\\ExpensesTracker\\expensestracker\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\loanreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\loanreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diluk\\AppData\\Local\\Temp\\2kgyh3c0..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\securityreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\securityreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C#\\ExpensesTracker\\expensestracker\\budget tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\incomereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\incomereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|d:\\programming\\c sharp\\uom\\expensestracker\\expensestracker\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\DATABASE_CONFIGURATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DATABASE_CONFIGURATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\categorydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\categorydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\overallreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\overallreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\budget tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\budget tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C#\\ExpensesTracker\\expensestracker\\budget tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\budget tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\budget tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\incomedatadashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\incomedatadashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expensedatadashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expensedatadashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\newloan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\newloan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\newloan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\newloan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\loanui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\loanui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\budget tracker app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\budget tracker app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\budget tracker app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\budget tracker app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\loanreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\loanreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\crystalreport3.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\crystalreport3.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\crystalreport2.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\crystalreport2.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\crystalreport1.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\crystalreport1.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expense.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expense.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\income.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\income.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\profile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\profile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\crystalreport5.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\crystalreport5.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\budget tracker app.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\budget tracker app.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\securityreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\securityreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\crystalreport4.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\crystalreport4.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\overallreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\overallreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\crystalreport1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\crystalreport1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\incomereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\incomereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\profile.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\profile.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\loanui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\loanui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\newloan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\newloan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expensetrackerdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expensetrackerdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\expensestracker.sln||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\expensestracker.sln||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\expensestracker\\budget tracker.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F45B6A-F83B-4909-B822-3E0C2269E7CC}|ExpensesTracker\\ExpensesTracker.csproj|solutionrelative:expensestracker\\budget tracker.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,76 +221,674 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 1230,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IncomeData.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\IncomeData.cs",
-              "RelativeDocumentMoniker": "ExpensesTracker\\IncomeData.cs",
-              "ToolTip": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\IncomeData.cs",
-              "RelativeToolTip": "ExpensesTracker\\IncomeData.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCQAAABAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Form3.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Form3.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Form3.cs",
+              "RelativeToolTip": "ExpensesTracker\\Form3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T13:52:04.73Z"
+              "WhenOpened": "2025-09-28T07:11:07.238Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IncomeReport.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\IncomeReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeReport.cs",
+              "RelativeToolTip": "ExpensesTracker\\IncomeReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:15:55.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoanReport.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\LoanReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanReport.cs",
+              "RelativeToolTip": "ExpensesTracker\\LoanReport.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAASwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T04:43:47.036Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "2kgyh3c0..sql",
-              "DocumentMoniker": "C:\\Users\\diluk\\AppData\\Local\\Temp\\2kgyh3c0..sql",
-              "ToolTip": "C:\\Users\\diluk\\AppData\\Local\\Temp\\2kgyh3c0..sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-25T13:50:53.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Income.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Income.cs",
-              "RelativeDocumentMoniker": "ExpensesTracker\\Income.cs",
-              "ToolTip": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Income.cs",
-              "RelativeToolTip": "ExpensesTracker\\Income.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYBAABCAAAAAAAAAA==",
+              "Title": "SecurityReport.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\SecurityReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\SecurityReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\SecurityReport.cs",
+              "RelativeToolTip": "ExpensesTracker\\SecurityReport.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T13:48:51.688Z",
+              "WhenOpened": "2025-09-28T17:31:18.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Income.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Income.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Income.cs",
               "RelativeDocumentMoniker": "ExpensesTracker\\Income.cs",
-              "ToolTip": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Income.cs [Design]",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Income.cs [Design]",
               "RelativeToolTip": "ExpensesTracker\\Income.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T13:48:50.189Z"
+              "WhenOpened": "2025-09-25T14:52:35.6Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Budget Tracker.cs",
-              "DocumentMoniker": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs",
-              "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker.cs",
-              "ToolTip": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs",
-              "RelativeToolTip": "ExpensesTracker\\Budget Tracker.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowE0AAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Income.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Income.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Income.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Income.cs",
+              "RelativeToolTip": "ExpensesTracker\\Income.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T13:47:34.362Z"
+              "WhenOpened": "2025-09-25T14:49:20.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Budget Tracker.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs",
+              "DocumentIndex": 6,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\DatabaseConfig.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\DatabaseConfig.cs",
+              "RelativeToolTip": "ExpensesTracker\\DatabaseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:02:08.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\App.config",
+              "RelativeDocumentMoniker": "ExpensesTracker\\App.config",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\App.config",
+              "RelativeToolTip": "ExpensesTracker\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-25T15:06:08.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DATABASE_CONFIGURATION.md",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\DATABASE_CONFIGURATION.md",
+              "RelativeDocumentMoniker": "DATABASE_CONFIGURATION.md",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\DATABASE_CONFIGURATION.md",
+              "RelativeToolTip": "DATABASE_CONFIGURATION.md",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-29T15:17:52.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryData.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CategoryData.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CategoryData.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CategoryData.cs",
+              "RelativeToolTip": "ExpensesTracker\\CategoryData.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAD4vywAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:21:46.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OverallReport.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\OverallReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\OverallReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\OverallReport.cs",
+              "RelativeToolTip": "ExpensesTracker\\OverallReport.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAASwCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T08:09:42.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Expense.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Expense.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Expense.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Expense.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\Expense.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:48:28.842Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Form3.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Form3.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Form3.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T07:10:30.342Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Budget Tracker.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs",
               "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker.cs",
-              "ToolTip": "D:\\Programming\\C#\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs [Design]",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs",
+              "RelativeToolTip": "ExpensesTracker\\Budget Tracker.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAASwB4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:56:57.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Budget Tracker.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.cs [Design]",
               "RelativeToolTip": "ExpensesTracker\\Budget Tracker.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T13:15:18.475Z"
+              "WhenOpened": "2025-09-25T13:56:52.758Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IncomeDataDashboard.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeDataDashboard.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\IncomeDataDashboard.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeDataDashboard.cs",
+              "RelativeToolTip": "ExpensesTracker\\IncomeDataDashboard.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAASwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T17:57:50.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExpenseDataDashboard.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpenseDataDashboard.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\ExpenseDataDashboard.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpenseDataDashboard.cs",
+              "RelativeToolTip": "ExpensesTracker\\ExpenseDataDashboard.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAASwBEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T17:57:12.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NewLoan.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\NewLoan.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\NewLoan.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\NewLoan.cs",
+              "RelativeToolTip": "ExpensesTracker\\NewLoan.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T18:46:16.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NewLoan.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\NewLoan.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\NewLoan.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\NewLoan.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\NewLoan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T18:36:56.012Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoanUI.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanUI.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\LoanUI.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanUI.cs",
+              "RelativeToolTip": "ExpensesTracker\\LoanUI.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAASwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T18:33:57.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IncomeData.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeData.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\IncomeData.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeData.cs",
+              "RelativeToolTip": "ExpensesTracker\\IncomeData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:22:08.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Dashboard.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Dashboard.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Dashboard.cs",
+              "RelativeToolTip": "ExpensesTracker\\Dashboard.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAANQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:47:30.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Dashboard.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Dashboard.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Dashboard.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:47:25.735Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Expense.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Expense.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Expense.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Expense.cs",
+              "RelativeToolTip": "ExpensesTracker\\Expense.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:48:31.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Profile.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.cs",
+              "RelativeToolTip": "ExpensesTracker\\Profile.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAASwDAAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:50:05.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Budget Tracker App.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker App.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker App.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker App.cs",
+              "RelativeToolTip": "ExpensesTracker\\Budget Tracker App.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAASwAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:51:14.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Budget Tracker App.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker App.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker App.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker App.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\Budget Tracker App.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:57:28.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CrystalReport1.rpt",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport1.rpt",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CrystalReport1.rpt",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport1.rpt",
+              "RelativeToolTip": "ExpensesTracker\\CrystalReport1.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-09-28T06:25:23.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoanReport.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\LoanReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanReport.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\LoanReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T03:52:41.585Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CrystalReport3.rpt",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport3.rpt",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CrystalReport3.rpt",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport3.rpt",
+              "RelativeToolTip": "ExpensesTracker\\CrystalReport3.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-09-28T05:54:18.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CrystalReport2.rpt",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport2.rpt",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CrystalReport2.rpt",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport2.rpt",
+              "RelativeToolTip": "ExpensesTracker\\CrystalReport2.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-09-28T06:05:38.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Profile.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Profile.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\Profile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:52:50.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Expense.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Expense.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Expense.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Expense.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\Expense.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:52:25.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ExpenseData.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpenseData.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\ExpenseData.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpenseData.cs",
+              "RelativeToolTip": "ExpensesTracker\\ExpenseData.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAABRwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:22:01.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Income.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Income.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Income.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Income.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\Income.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAE4BAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:52:37.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Profile.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Profile.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\Profile.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAHcBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:52:52.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CrystalReport5.rpt",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport5.rpt",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CrystalReport5.rpt",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport5.rpt",
+              "RelativeToolTip": "ExpensesTracker\\CrystalReport5.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-09-28T10:50:21.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Budget Tracker App.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker App.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker App.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker App.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\Budget Tracker App.Designer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAArwCABAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:53:20.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SecurityReport.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\SecurityReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\SecurityReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\SecurityReport.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\SecurityReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T17:31:06.309Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CrystalReport4.rpt",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport4.rpt",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CrystalReport4.rpt",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport4.rpt",
+              "RelativeToolTip": "ExpensesTracker\\CrystalReport4.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-09-28T17:31:22.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OverallReport.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\OverallReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\OverallReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\OverallReport.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\OverallReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T08:09:23.766Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CrystalReport1.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport1.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\CrystalReport1.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\CrystalReport1.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\CrystalReport1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T07:15:15.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IncomeReport.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeReport.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\IncomeReport.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\IncomeReport.cs [Design]",
+              "RelativeToolTip": "ExpensesTracker\\IncomeReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T08:04:17.48Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Profile.resx",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.resx",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Profile.resx",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Profile.resx",
+              "RelativeToolTip": "ExpensesTracker\\Profile.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-25T14:58:28.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Program.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Program.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Program.cs",
+              "RelativeToolTip": "ExpensesTracker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T07:40:19.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "LoginInfo.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoginInfo.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\LoginInfo.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoginInfo.cs",
+              "RelativeToolTip": "ExpensesTracker\\LoginInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T18:53:24.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "NewLoan.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\NewLoan.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\NewLoan.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\NewLoan.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\NewLoan.Designer.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T18:51:28.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "LoanUI.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanUI.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\LoanUI.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\LoanUI.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\LoanUI.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwOIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T19:03:38.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Dashboard.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Dashboard.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Dashboard.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\Dashboard.Designer.cs",
+              "ViewState": "AgIAABgCAAAAAAAAAAAAAGgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:51:21.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ExpenseTrackerDataSet.xsd",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpenseTrackerDataSet.xsd",
+              "RelativeDocumentMoniker": "ExpensesTracker\\ExpenseTrackerDataSet.xsd",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpenseTrackerDataSet.xsd",
+              "RelativeToolTip": "ExpensesTracker\\ExpenseTrackerDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-09-25T15:09:33.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "ExpensesTracker\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:06:17.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ExpensesTracker.sln",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpensesTracker.sln",
+              "RelativeDocumentMoniker": "ExpensesTracker\\ExpensesTracker.sln",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\ExpensesTracker.sln",
+              "RelativeToolTip": "ExpensesTracker\\ExpensesTracker.sln",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002855|",
+              "WhenOpened": "2025-09-25T14:49:12.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Budget Tracker.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.Designer.cs",
+              "RelativeDocumentMoniker": "ExpensesTracker\\Budget Tracker.Designer.cs",
+              "ToolTip": "D:\\Programming\\C Sharp\\UoM\\ExpensesTracker\\ExpensesTracker\\Budget Tracker.Designer.cs",
+              "RelativeToolTip": "ExpensesTracker\\Budget Tracker.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:57:28.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

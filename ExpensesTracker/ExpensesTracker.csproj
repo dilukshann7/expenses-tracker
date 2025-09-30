@@ -36,8 +36,15 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,12 +68,43 @@
     <Compile Include="Budget Tracker App.Designer.cs">
       <DependentUpon>Budget Tracker App.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConfig.cs" />
     <Compile Include="Expense.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,6 +114,11 @@
     <Compile Include="CategoryData.cs" />
     <Compile Include="ExpenseDataDashboard.cs" />
     <Compile Include="ExpenseData.cs" />
+    <Compile Include="ExpenseTrackerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpenseTrackerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,7 +133,37 @@
     </Compile>
     <Compile Include="IncomeDataDashboard.cs" />
     <Compile Include="IncomeData.cs" />
+    <Compile Include="IncomeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeReport.Designer.cs">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanReport.Designer.cs">
+      <DependentUpon>LoanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoanUI.Designer.cs">
+      <DependentUpon>LoanUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginInfo.cs" />
+    <Compile Include="NewLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLoan.Designer.cs">
+      <DependentUpon>NewLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverallReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverallReport.Designer.cs">
+      <DependentUpon>OverallReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,11 +172,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityReport.Designer.cs">
+      <DependentUpon>SecurityReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Budget Tracker.resx">
       <DependentUpon>Budget Tracker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Budget Tracker App.resx">
       <DependentUpon>Budget Tracker App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -111,8 +210,26 @@
     <EmbeddedResource Include="Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Income.resx">
       <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeReport.resx">
+      <DependentUpon>IncomeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanReport.resx">
+      <DependentUpon>LoanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanUI.resx">
+      <DependentUpon>LoanUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLoan.resx">
+      <DependentUpon>NewLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverallReport.resx">
+      <DependentUpon>OverallReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
@@ -127,6 +244,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SecurityReport.resx">
+      <DependentUpon>SecurityReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ExpenseTrackerDataSet.xsc">
+      <DependentUpon>ExpenseTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExpenseTrackerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExpenseTrackerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExpenseTrackerDataSet.xss">
+      <DependentUpon>ExpenseTrackerDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,7 +276,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ExpensesTracker.sln" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\cash_2021686.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

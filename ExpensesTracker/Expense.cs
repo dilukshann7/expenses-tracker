@@ -2,10 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
@@ -49,6 +45,7 @@ namespace ExpensesTracker
             }
         }
 
+
         private void StyleDataGridViewDark()
         {
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -88,9 +85,7 @@ namespace ExpensesTracker
 
         public void displayCategories()
         {
-            string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
 
@@ -124,79 +119,140 @@ namespace ExpensesTracker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == -1 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            if (comboBox1.SelectedIndex == -1 || string.IsNullOrWhiteSpace(textBox1.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
-            {
-                string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
 
-                using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
+            {
+                connect.Open();
+
+                int categoryId = 0;
+                string selectedCategory = comboBox1.Text.Trim();
+
+                using (SqlCommand getCatIdCmd = new SqlCommand(
+                    "SELECT id FROM Categories WHERE category = @catName AND user_id = @user_id", connect))
                 {
-                    connect.Open();
-                    string insertData = "INSERT INTO expenses (category, item, cost, description, date_expense, date_insert, user_id)" +
-                        "VALUES(@cat, @item, @cost, @desc, @date_expense, @date_insert, @user_id);";
-                    using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                    getCatIdCmd.Parameters.AddWithValue("@catName", selectedCategory);
+                    getCatIdCmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+
+                    object result = getCatIdCmd.ExecuteScalar();
+                    if (result != null)
                     {
-                        cmd.Parameters.AddWithValue("@cat", 1);
-                        cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@cost", textBox2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@desc", textBox3.Text.Trim());
-                        cmd.Parameters.AddWithValue("@date_expense", dateTimePicker1.Value);
-                        cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
-                        cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID); // Add the current user's ID
-                        cmd.ExecuteNonQuery();
-                        clearFields();
-                        MessageBox.Show("Added successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        categoryId = Convert.ToInt32(result);
                     }
-                    connect.Close();
+                    else
+                    {
+                        MessageBox.Show("Category not found in database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return; 
+                    }
                 }
+                
+                
+                // Assuming you have a DateTimePicker named dateTimePicker1
+                DateTime selectedDate = dateTimePicker1.Value;
+
+                // If you want it as a string
+                string dateString = dateTimePicker1.Value.ToString("yyyy-MM-dd"); // format as needed
+
+
+                string insertData = @"INSERT INTO expenses 
+                              (category, item, cost, description, date_expense, date_insert, user_id)
+                              VALUES (@cat, @item, @cost, @desc, @date_expense, @date_insert, @user_id);";
+
+                using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                {
+                    cmd.Parameters.AddWithValue("@cat", categoryId); // Pass FK ID
+                    cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@cost", textBox2.Text.Trim());
+                    cmd.Parameters.AddWithValue("@desc", textBox3.Text.Trim());
+                    cmd.Parameters.AddWithValue("@date_expense", dateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+
+                    cmd.ExecuteNonQuery();
+                    clearFields();
+
+                    MessageBox.Show("Added successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                connect.Close();
             }
+
             displayExpenseData();
         }
 
+
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            Form3 reportForm = new Form3(LoginInfo.ID);
+            reportForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == -1 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            if (comboBox1.SelectedIndex == -1 || string.IsNullOrWhiteSpace(textBox1.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
-                string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
+                connect.Open();
 
-                using (SqlConnection connect = new SqlConnection(connStr))
+                // Get the category ID based on selected category name
+                int categoryId = 0;
+                string selectedCategory = comboBox1.Text.Trim();
+
+                using (SqlCommand getCatIdCmd = new SqlCommand(
+                    "SELECT id FROM Categories WHERE category = @catName AND user_id = @user_id", connect))
                 {
-                    connect.Open();
+                    getCatIdCmd.Parameters.AddWithValue("@catName", selectedCategory);
+                    getCatIdCmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
 
-                    string updateData = "UPDATE expenses SET category = @category, item = @item, cost = @cost, description = @description, date_expense = @date_expense, date_insert = @date_insert WHERE id = @id AND user_id = @user_id";
-
-                    using (SqlCommand cmd = new SqlCommand(updateData, connect))
+                    object result = getCatIdCmd.ExecuteScalar();
+                    if (result != null)
                     {
-                        cmd.Parameters.AddWithValue("@category", comboBox1.SelectedItem);
-                        cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@cost", textBox2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@description", textBox3.Text.Trim());
-                        cmd.Parameters.AddWithValue("@date_expense", dateTimePicker1.Value);
-                        cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
-                        cmd.Parameters.AddWithValue("@id", getID);
-                        cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID); // Ensure user_id is included
-
-                        cmd.ExecuteNonQuery();
-                        clearFields();
-
-                        MessageBox.Show("Updated successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        categoryId = Convert.ToInt32(result);
                     }
-
-                    connect.Close();
+                    else
+                    {
+                        MessageBox.Show("Category not found in database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return; // Stop update
+                    }
                 }
+
+                // Update expense using the actual category ID
+                string updateData = @"UPDATE expenses 
+                              SET category = @category, item = @item, cost = @cost, description = @description, 
+                                  date_expense = @date_expense, date_insert = @date_insert
+                              WHERE id = @id AND user_id = @user_id";
+
+                using (SqlCommand cmd = new SqlCommand(updateData, connect))
+                {
+                    cmd.Parameters.AddWithValue("@category", categoryId); // Pass FK ID
+                    cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@cost", textBox2.Text.Trim());
+                    cmd.Parameters.AddWithValue("@description", textBox3.Text.Trim());
+                    cmd.Parameters.AddWithValue("@date_expense", dateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@id", getID);
+                    cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+
+                    cmd.ExecuteNonQuery();
+                    clearFields();
+
+                    MessageBox.Show("Updated successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                connect.Close();
             }
+
             displayExpenseData();
         }
 
@@ -226,9 +282,7 @@ namespace ExpensesTracker
             }
             else
             {
-                string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
-
-                using (SqlConnection connect = new SqlConnection(connStr))
+                using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
                 {
                     connect.Open();
 
@@ -253,6 +307,28 @@ namespace ExpensesTracker
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        // Add this method to refresh data when switching between forms
+        public void RefreshData()
+        {
+            displayCategories();
+            displayExpenseData();
         }
     }
 }

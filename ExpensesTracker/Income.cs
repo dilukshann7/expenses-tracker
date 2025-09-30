@@ -1,55 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace ExpensesTracker
 {
-    public partial class Income: UserControl
+    public partial class Income : UserControl
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\diluk\OneDrive\Documents\expense.mdf;Integrated Security=True;Connect Timeout=30");
+        private int getID = 0;
+
         public Income()
         {
             InitializeComponent();
-
             displayCategories();
             displayIncomeData();
             StyleDataGridViewDark();
             dataGridView1.CellFormatting += dataGridView1_CellFormatting;
-
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "status")
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "status" && e.Value != null)
             {
-                if (e.Value != null)
+                string status = e.Value.ToString();
+                if (status == "Submitted")
                 {
-                    string status = e.Value.ToString();
-                    if (status == "Submitted")
-                    {
-                        e.CellStyle.BackColor = Color.MediumSlateBlue;
-                        e.CellStyle.ForeColor = Color.White;
-                    }
-                    else if (status == "Not Submitted")
-                    {
-                        e.CellStyle.BackColor = Color.MediumVioletRed;
-                        e.CellStyle.ForeColor = Color.White;
-                    }
-
-                    e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                    e.CellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+                    e.CellStyle.BackColor = Color.MediumSlateBlue;
+                    e.CellStyle.ForeColor = Color.White;
                 }
+                else if (status == "Not Submitted")
+                {
+                    e.CellStyle.BackColor = Color.MediumVioletRed;
+                    e.CellStyle.ForeColor = Color.White;
+                }
+                e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                e.CellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
             }
         }
-
 
         private void StyleDataGridViewDark()
         {
@@ -75,40 +63,30 @@ namespace ExpensesTracker
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(70, 70, 70);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
             dataGridView1.CurrentCell = null;
         }
 
         public void displayIncomeData()
         {
             IncomeData Data = new IncomeData();
-            List<IncomeData> listData = Data.incomeListData(LoginInfo.ID); 
-
+            List<IncomeData> listData = Data.incomeListData(LoginInfo.ID);
             dataGridView1.DataSource = listData;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
         }
+
+
         public void displayCategories()
         {
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
-
-                string selectData = "SELECT category FROM categories WHERE type = @type AND user_id = @user_id";
-
+                string selectData = "SELECT category FROM Categories WHERE type = @type AND user_id = @user_id";
                 using (SqlCommand cmd = new SqlCommand(selectData, connect))
                 {
                     cmd.Parameters.AddWithValue("@type", "Income");
                     cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
-
                     comboBox1.Items.Clear();
-
                     SqlDataReader reader = cmd.ExecuteReader();
-
                     while (reader.Read())
                     {
                         comboBox1.Items.Add(reader["category"].ToString());
@@ -117,55 +95,160 @@ namespace ExpensesTracker
             }
         }
 
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == -1 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            if (comboBox1.SelectedIndex == -1 || string.IsNullOrWhiteSpace(textBox1.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
             {
                 MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
-            {
-                string dbPath = Application.StartupPath + @"\expense.mdf";
-                string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
 
-                using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
+            {
+                connect.Open();
+
+                // Query category ID from Categories table
+                int categoryId = 0;
+                string selectedCategory = comboBox1.Text.Trim();
+                using (SqlCommand cmdCat = new SqlCommand("SELECT id FROM Categories WHERE category = @cat AND user_id = @user_id", connect))
                 {
-                    connect.Open();
-                    string insertData = "INSERT INTO income (category, item, income, description, date_income, date_insert, user_id)" +
-                        "VALUES(@cat, @item, @income, @desc, @date_income, @date_insert, @user_id);";
-                    using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                    cmdCat.Parameters.AddWithValue("@cat", selectedCategory);
+                    cmdCat.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+                    object result = cmdCat.ExecuteScalar();
+                    if (result != null)
+                        categoryId = Convert.ToInt32(result);
+                    else
                     {
-                        cmd.Parameters.AddWithValue("@cat", comboBox1.SelectedItem);
-                        cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@income", textBox2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@desc", textBox3.Text.Trim());
-                        cmd.Parameters.AddWithValue("@date_income", dateTimePicker1.Value);
-                        cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
-                        cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID); // Add the user ID
-                        cmd.ExecuteNonQuery();
-                        clearFields();
-                        MessageBox.Show("Added successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Category not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
                     }
-                    connect.Close();
+                }
+
+                string insertData = @"INSERT INTO income 
+                                      (category, item, income, description, date_income, date_insert, user_id)
+                                      VALUES (@cat, @item, @income, @desc, @date_income, @date_insert, @user_id)";
+
+                using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                {
+                    cmd.Parameters.AddWithValue("@cat", categoryId);
+                    cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@income", textBox2.Text.Trim());
+                    cmd.Parameters.AddWithValue("@desc", textBox3.Text.Trim());
+                    cmd.Parameters.AddWithValue("@date_income", dateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+
+                    cmd.ExecuteNonQuery();
+                    clearFields();
+                    MessageBox.Show("Added successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+            displayIncomeData();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == -1 || string.IsNullOrWhiteSpace(textBox1.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
+            {
+                connect.Open();
+
+                // Query category ID from Categories table
+                int categoryId = 0;
+                string selectedCategory = comboBox1.Text.Trim();
+                using (SqlCommand cmdCat = new SqlCommand("SELECT id FROM Categories WHERE category = @cat AND user_id = @user_id", connect))
+                {
+                    cmdCat.Parameters.AddWithValue("@cat", selectedCategory);
+                    cmdCat.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+                    object result = cmdCat.ExecuteScalar();
+                    if (result != null)
+                        categoryId = Convert.ToInt32(result);
+                    else
+                    {
+                        MessageBox.Show("Category not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                string updateData = @"UPDATE income 
+                                      SET category = @category, item = @item, income = @income, description = @description, 
+                                          date_income = @date_income, date_insert = @date_insert
+                                      WHERE id = @id AND user_id = @user_id";
+
+                using (SqlCommand cmd = new SqlCommand(updateData, connect))
+                {
+                    cmd.Parameters.AddWithValue("@category", categoryId);
+                    cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
+                    cmd.Parameters.AddWithValue("@income", textBox2.Text.Trim());
+                    cmd.Parameters.AddWithValue("@description", textBox3.Text.Trim());
+                    cmd.Parameters.AddWithValue("@date_income", dateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@id", getID);
+                    cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
+
+                    cmd.ExecuteNonQuery();
+                    clearFields();
+                    MessageBox.Show("Updated successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             displayIncomeData();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (getID == 0)
+            {
+                MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
+            {
+                connect.Open();
+                string deleteData = "DELETE FROM income WHERE id = @id";
+                using (SqlCommand cmd = new SqlCommand(deleteData, connect))
+                {
+                    cmd.Parameters.AddWithValue("@id", getID);
+                    cmd.ExecuteNonQuery();
+                    clearFields();
+                    MessageBox.Show("Deleted successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+            displayIncomeData();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                getID = (int)row.Cells[0].Value;
+
+                // Get category name from database for ComboBox
+                string categoryName = row.Cells[1].Value.ToString();
+                comboBox1.SelectedItem = categoryName;
+
+                textBox1.Text = row.Cells[2].Value.ToString();
+                textBox2.Text = row.Cells[3].Value.ToString();
+                textBox3.Text = row.Cells[4].Value.ToString();
+                dateTimePicker1.Value = Convert.ToDateTime(row.Cells[5].Value);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            IncomeReport incomeReport = new IncomeReport(LoginInfo.ID);
+            incomeReport.Show();
+
         }
 
         public void clearFields()
@@ -174,119 +257,18 @@ namespace ExpensesTracker
             textBox2.Text = "";
             textBox3.Text = "";
             comboBox1.SelectedIndex = -1;
-            dateTimePicker1.Value = DateTime.Now;  
+            dateTimePicker1.Value = DateTime.Now;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        // Add this method to refresh data when switching between forms
+        public void RefreshData()
         {
             displayCategories();
-            displayIncomeData();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedIndex == -1 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
-            {
-                MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                string dbPath = Application.StartupPath + @"\expense.mdf";
-                string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-                using (SqlConnection connect = new SqlConnection(connStr))
-                {
-                    connect.Open();
-
-                    string updateData = "UPDATE income SET category = @category, item = @item, income = @income, description = @description, date_income = @date_income, date_insert = @date_insert WHERE id = @id AND user_id = @user_id";
-
-                    using (SqlCommand cmd = new SqlCommand(updateData, connect))
-                    {
-                        cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);  // Pass the correct user ID
-
-                        cmd.Parameters.AddWithValue("@category", comboBox1.SelectedItem);
-                        cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@income", textBox2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@description", textBox3.Text.Trim());
-                        cmd.Parameters.AddWithValue("@date_income", dateTimePicker1.Value);
-                        cmd.Parameters.AddWithValue("@date_insert", DateTime.Now);
-                        cmd.Parameters.AddWithValue("@id", getID);
-
-                        cmd.ExecuteNonQuery();
-                        clearFields();
-
-                        MessageBox.Show("Updated successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-
-                    connect.Close();
-                }
-            }
-            displayIncomeData();
-        }
-
-        private int getID = 0;
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(e.RowIndex != -1)
-            {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-
-                getID = (int)row.Cells[0].Value;
-                comboBox1.SelectedItem = row.Cells[1].Value.ToString();
-                textBox1.Text = row.Cells[2].Value.ToString();
-                textBox2.Text = row.Cells[3].Value.ToString();
-                textBox3.Text = row.Cells[4].Value.ToString();
-                dateTimePicker1.Value = Convert.ToDateTime(row.Cells[5].Value.ToString());
-
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedIndex == -1 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
-            {
-                MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                string dbPath = Application.StartupPath + @"\expense.mdf";
-                string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-                using (SqlConnection connect = new SqlConnection(connStr))
-                {
-                    connect.Open();
-
-                    string deleteData = "DELETE FROM income WHERE id = @id";
-
-                    using (SqlCommand cmd = new SqlCommand(deleteData, connect))
-                    {
-                        cmd.Parameters.AddWithValue("@id", getID);
-
-                        cmd.ExecuteNonQuery();
-                        clearFields();
-
-                        MessageBox.Show("Updated successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-
-                    connect.Close();
-                }
-            }
             displayIncomeData();
         }
     }

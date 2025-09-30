@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace ExpensesTracker
 {
@@ -21,10 +16,7 @@ namespace ExpensesTracker
         {
             List<IncomeDataDashboard> listData = new List<IncomeDataDashboard>();
 
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
 

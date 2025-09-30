@@ -18,10 +18,7 @@ namespace ExpensesTracker
         {
             List<IncomeData> listData = new List<IncomeData>();
 
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
 

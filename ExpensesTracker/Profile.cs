@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using static System.Collections.Specialized.BitVector32;
 
 namespace ExpensesTracker
 {
@@ -17,11 +11,8 @@ namespace ExpensesTracker
         public Profile()
         {
             InitializeComponent();
-
             StyleDataGridViewDark();
-
             displayCategories();
-
         }
 
         private void StyleDataGridViewDark()
@@ -47,17 +38,6 @@ namespace ExpensesTracker
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
             dataGridView1.CurrentCell = null;
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         public void displayCategories()
@@ -67,8 +47,6 @@ namespace ExpensesTracker
 
             dataGridView1.DataSource = listData;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -78,10 +56,8 @@ namespace ExpensesTracker
                 MessageBox.Show("Please fill all fields");
                 return;
             }
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
 
-            using (SqlConnection connection = new SqlConnection(connStr))
+            using (SqlConnection connection = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connection.Open();
                 string query = "INSERT INTO categories (category, type, user_id, date_insert) VALUES (@category, @type, @user_id, @date_insert)";
@@ -98,24 +74,19 @@ namespace ExpensesTracker
             MessageBox.Show("Category saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
             displayCategories();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int userId = LoginInfo.ID;
 
-            string query = "UPDATE users SET username = @username, password = @password WHERE id = 2";
+            string query = "UPDATE users SET username = @username, password = @password WHERE id = @userId";
 
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            SqlConnection conn = new SqlConnection(connStr);
+            SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString);
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
+                cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@username", textBox1.Text.Trim());
                 cmd.Parameters.AddWithValue("@password", textBox2.Text.Trim());
 
@@ -140,21 +111,6 @@ namespace ExpensesTracker
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private int getID = 0;
         private void button5_Click_1(object sender, EventArgs e)
         {
@@ -170,10 +126,7 @@ namespace ExpensesTracker
                 return;
             }
 
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
 
@@ -205,8 +158,15 @@ namespace ExpensesTracker
             }
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        // Add this method to refresh data when switching between forms
+        public void RefreshData()
+        {
+            displayCategories();
         }
     }
 }

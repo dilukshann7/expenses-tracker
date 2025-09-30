@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ExpensesTracker
 {
-    class CategoryData
+    public class CategoryData
     {
         public int ID { set; get; }
         public string Category { set; get; }
@@ -19,10 +19,8 @@ namespace ExpensesTracker
         public List<CategoryData> CategoryListData()
         {
             List<CategoryData> listData = new List<CategoryData>();
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
                 string selectData = "SELECT * FROM categories WHERE user_id = @user_id";

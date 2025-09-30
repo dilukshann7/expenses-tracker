@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace ExpensesTracker
 {
@@ -18,21 +13,6 @@ namespace ExpensesTracker
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (username.Text == "" || password.Text == "")
@@ -41,79 +21,63 @@ namespace ExpensesTracker
             }
             else
             {
-                    try
+                try
+                {
+                    using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
                     {
-                        string dbPath = Application.StartupPath + @"\expense.mdf";
-                        string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-                        SqlConnection connect = new SqlConnection(connStr);
-                        
                         connect.Open();
 
                         string selectUsername = "SELECT * FROM users WHERE username = @usern";
-
                         using (SqlCommand checkUser = new SqlCommand(selectUsername, connect))
                         {
                             checkUser.Parameters.AddWithValue("@usern", username.Text.Trim());
-
                             SqlDataAdapter adapter = new SqlDataAdapter(checkUser);
                             DataTable table = new DataTable();
                             adapter.Fill(table);
 
                             if (table.Rows.Count != 0)
                             {
-                                string tempUsername = username.Text.Substring(0, 1).ToUpper() + username.Text.Substring(1);
-                                MessageBox.Show(tempUsername + " is existing already", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Username already exists!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             else
                             {
-                                string insertData = "INSERT INTO users (username, password, date_create) VALUES(@usern, @pass, @date)";
-
+                                string insertData = "INSERT INTO users (username, password, date_create) OUTPUT INSERTED.id VALUES(@usern, @pass, @date)";
                                 using (SqlCommand insertUser = new SqlCommand(insertData, connect))
                                 {
                                     insertUser.Parameters.AddWithValue("@usern", username.Text.Trim());
                                     insertUser.Parameters.AddWithValue("@pass", password.Text.Trim());
                                     insertUser.Parameters.AddWithValue("@date", DateTime.Now);
-                                    int rows = insertUser.ExecuteNonQuery();
-                                    if (rows > 0)
+
+                                    int userId = (int)insertUser.ExecuteScalar(); // Get inserted ID
+
+                                    // Log registration
+                                    string logRegister = "INSERT INTO UserActivityLog (UserId, Username, ActionType, Notes) VALUES (@userId, @username, 'REGISTER', 'New account created')";
+                                    using (SqlCommand logCmd = new SqlCommand(logRegister, connect))
                                     {
-                                        MessageBox.Show("Account Created Successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        username.Clear();
-                                        password.Clear();
+                                        logCmd.Parameters.AddWithValue("@userId", userId);
+                                        logCmd.Parameters.AddWithValue("@username", username.Text.Trim());
+                                        logCmd.ExecuteNonQuery();
                                     }
-                                    else
-                                    {
-                                        MessageBox.Show("Account Creation Failed", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    }
+
+                                    MessageBox.Show("Account Created Successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    username.Clear();
+                                    password.Clear();
                                 }
                             }
                         }
-                        connect.Close();
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Account Creation Failed", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Account Creation Failed: " + ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-        }
-
-        private void username_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void password_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
                 string selectUsername = "SELECT id, username FROM users WHERE username = @usern AND password = @pass";
@@ -124,18 +88,24 @@ namespace ExpensesTracker
                     SqlDataAdapter adapter = new SqlDataAdapter(checkUser);
                     DataTable table = new DataTable();
                     adapter.Fill(table);
+
                     if (table.Rows.Count != 0)
                     {
-                        // Get the user ID from the first row
                         int userId = Convert.ToInt32(table.Rows[0]["id"]);
                         string usernameValue = table.Rows[0]["username"].ToString();
 
-                        // Store login info
+                        // Log Successful Login
+                        string logLogin = "INSERT INTO UserActivityLog (UserId, Username, ActionType, Notes) VALUES (@userId, @username, 'LOGIN', 'Successful login')";
+                        using (SqlCommand logCmd = new SqlCommand(logLogin, connect))
+                        {
+                            logCmd.Parameters.AddWithValue("@userId", userId);
+                            logCmd.Parameters.AddWithValue("@username", usernameValue);
+                            logCmd.ExecuteNonQuery();
+                        }
+
                         LoginInfo.ID = userId;
                         LoginInfo.Username = usernameValue;
                         LoginInfo.IsLoggedIn = true;
-
-                        MessageBox.Show("Login Successful", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         this.Hide();
                         Form2 form2 = new Form2();
@@ -143,10 +113,30 @@ namespace ExpensesTracker
                     }
                     else
                     {
+                        // Log Failed Login Attempt
+                        string logFailed = "INSERT INTO UserActivityLog (Username, ActionType, Notes) VALUES (@username, 'LOGIN_FAILED', 'Invalid credentials')";
+                        using (SqlCommand logFailedCmd = new SqlCommand(logFailed, connect))
+                        {
+                            logFailedCmd.Parameters.AddWithValue("@username", username.Text.Trim());
+                            logFailedCmd.ExecuteNonQuery();
+                        }
+
                         MessageBox.Show("Invalid Credentials", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SecurityReport securityReport = new SecurityReport();
+            securityReport.Show();
         }
     }
 }

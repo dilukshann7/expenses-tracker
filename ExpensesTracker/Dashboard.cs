@@ -14,7 +14,6 @@ namespace ExpensesTracker
 {
     public partial class Dashboard: UserControl
     {
-
         public Dashboard()
         {
             InitializeComponent();
@@ -27,10 +26,7 @@ namespace ExpensesTracker
 
         public void LoadIncomeAndExpenseData()
         {
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
+            using (SqlConnection connect = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 connect.Open();
 
@@ -84,123 +80,10 @@ namespace ExpensesTracker
             }
         }
 
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM expenses WHERE user_id = @user_id";
-
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
-
-            using (SqlConnection connect = new SqlConnection(connStr))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, connect))
-                {
-                    cmd.Parameters.AddWithValue("@user_id", LoginInfo.ID);
-
-                    connect.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        SaveFileDialog saveFileDialog = new SaveFileDialog
-                        {
-                            Filter = "CSV file (*.csv)|*.csv",
-                            FileName = "export.csv"
-                        };
-
-                        if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                        {
-                            using (StreamWriter sw = new StreamWriter(saveFileDialog.FileName, false, Encoding.UTF8))
-                            {
-                                for (int i = 0; i < reader.FieldCount; i++)
-                                {
-                                    sw.Write(reader.GetName(i));
-                                    if (i < reader.FieldCount - 1)
-                                        sw.Write(",");
-                                }
-                                sw.WriteLine();
-
-                                while (reader.Read())
-                                {
-                                    for (int i = 0; i < reader.FieldCount; i++)
-                                    {
-                                        string value = reader[i].ToString().Replace("\"", "\"\"");
-                                        sw.Write($"\"{value}\"");
-                                        if (i < reader.FieldCount - 1)
-                                            sw.Write(",");
-                                    }
-                                    sw.WriteLine();
-                                }
-
-                                MessageBox.Show("CSV Exported Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
-                        }
-                    }
-                }
-            }  
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void expense_thisweek_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void expense_thismonth_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void income_thisweek_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void income_thismonth_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+            OverallReport reportForm = new OverallReport(LoginInfo.ID);
+            reportForm.Show();
 
         }
 
@@ -221,10 +104,6 @@ namespace ExpensesTracker
 
 
         private int getID = 0;
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -273,7 +152,6 @@ namespace ExpensesTracker
                 }
             }
         }
-
 
         private void StyleDataGridViewDark()
         {
@@ -326,17 +204,7 @@ namespace ExpensesTracker
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void income_thismonth_Click(object sender, EventArgs e)
         {
 
         }
