@@ -49,7 +49,6 @@ namespace ExpensesTracker
             }
         }
 
-
         private void StyleDataGridViewDark()
         {
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -76,7 +75,6 @@ namespace ExpensesTracker
             dataGridView1.MultiSelect = false;
             dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(70, 70, 70);
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
-            dataGridView1.CurrentCell = null;
         }
 
         public void displayExpenseData()
@@ -90,14 +88,13 @@ namespace ExpensesTracker
 
         public void displayCategories()
         {
-            string dbPath = Application.StartupPath + @"\expense.mdf";
-            string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
+            string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
 
             using (SqlConnection connect = new SqlConnection(connStr))
             {
                 connect.Open();
 
-                string selectData = "SELECT category FROM categories WHERE type = @type AND user_id = @user_id";
+                string selectData = "SELECT category FROM Categories WHERE type = @type AND user_id = @user_id";
 
                 using (SqlCommand cmd = new SqlCommand(selectData, connect))
                 {
@@ -114,13 +111,6 @@ namespace ExpensesTracker
                     }
                 }
             }
-        }
-
-     
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         public void clearFields()
@@ -140,8 +130,7 @@ namespace ExpensesTracker
             }
             else
             {
-                string dbPath = Application.StartupPath + @"\expense.mdf";
-                string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
+                string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
 
                 using (SqlConnection connect = new SqlConnection(connStr))
                 {
@@ -150,7 +139,7 @@ namespace ExpensesTracker
                         "VALUES(@cat, @item, @cost, @desc, @date_expense, @date_insert, @user_id);";
                     using (SqlCommand cmd = new SqlCommand(insertData, connect))
                     {
-                        cmd.Parameters.AddWithValue("@cat", comboBox1.SelectedItem);
+                        cmd.Parameters.AddWithValue("@cat", 1);
                         cmd.Parameters.AddWithValue("@item", textBox1.Text.Trim());
                         cmd.Parameters.AddWithValue("@cost", textBox2.Text.Trim());
                         cmd.Parameters.AddWithValue("@desc", textBox3.Text.Trim());
@@ -169,8 +158,7 @@ namespace ExpensesTracker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            displayCategories();
-            displayExpenseData();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -181,8 +169,7 @@ namespace ExpensesTracker
             }
             else
             {
-                string dbPath = Application.StartupPath + @"\expense.mdf";
-                string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
+                string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
 
                 using (SqlConnection connect = new SqlConnection(connStr))
                 {
@@ -213,7 +200,6 @@ namespace ExpensesTracker
             displayExpenseData();
         }
 
-
         private int getID = 0;
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -232,11 +218,6 @@ namespace ExpensesTracker
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == -1 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
@@ -245,8 +226,7 @@ namespace ExpensesTracker
             }
             else
             {
-                string dbPath = Application.StartupPath + @"\expense.mdf";
-                string connStr = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;";
+                string connStr = "Data Source=NITRO_5\\SQLEXPRESS;Initial Catalog=ExpenseTracker;Integrated Security=True";
 
                 using (SqlConnection connect = new SqlConnection(connStr))
                 {
@@ -270,7 +250,7 @@ namespace ExpensesTracker
             displayExpenseData();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
