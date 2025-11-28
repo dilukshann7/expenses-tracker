@@ -241,6 +241,7 @@ namespace ExpensesTracker
                 textBox2.Text = row.Cells[3].Value.ToString();
                 textBox3.Text = row.Cells[4].Value.ToString();
                 dateTimePicker1.Value = Convert.ToDateTime(row.Cells[5].Value);
+
             }
         }
 
